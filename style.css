@@ -10,6 +10,7 @@
     display: grid;
     width: 800px;
     height: 600px;
+    margin: 20px;
     border: 1px solid black;
     grid-template-columns: 3fr 8fr 2fr;
     gap: 15px;
@@ -108,4 +109,111 @@
 
 .footer1 {
     grid-column: 2/ span 2;
+}
+
+/* 4-project */
+
+.violet-grid {
+    display: grid;
+    width: 800px;
+    height: 500px;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 80px 300px 80px;
+    margin: 20px;
+    grid-gap: 20px;
+}
+
+.logo, .sidebar, .main2, .footer2 {
+    background-color: rgb(228, 199, 228);
+    border-radius: 10px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.logo {
+    grid-column: 1/3;
+    text-align: left;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent-dash {
+    display: flex;
+    padding: 10px;
+}
+
+.dash {
+    width: 60px;
+    height: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.sidebar {
+    grid-row: 2/4;
+}
+
+/* 5-project */
+
+.colorful-grid {
+    display: grid;
+    width: 1000px;
+    height: 800px;
+    grid-template-columns: 1fr 1.5fr 3fr 2fr;
+    grid-template-rows: 1fr 2fr 1.5fr 1.5fr 1fr;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.header3, .nav3, .upper-left, .upper-center, .upper-right, .middle-content, .lower-content, .footer3 {
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header3 {
+    background-color: lightgray;
+    grid-column: 1/ span 4;
+}
+
+.nav3 {
+    background-color: rgb(255, 184, 77);
+    grid-row: 2/ span 3;
+}
+
+.upper-left {
+    background-color: gray;
+    margin: 5px;
+}
+
+.upper-center {
+    background-color: red;
+    margin: 5px;
+}
+
+.upper-right {
+    background-color: gray;
+    margin: 5px;
+}
+
+.middle-content {
+    background-color: rgb(34, 168, 213);
+    grid-column: 2/span 3;
+    margin: 5px;
+}
+
+.lower-content {
+    background-color: rgb(255, 123, 35);
+    grid-column: 2/span 3;
+    margin: 5px;
+}
+
+.footer3 {
+    background-color: lightgray;
+    grid-column: 1/ span 4;
 }
